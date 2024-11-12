@@ -28,6 +28,12 @@ dependencies {
     testImplementation("org.springframework.kafka:spring-kafka-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("org.springframework.ws:spring-ws-core")
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
+
+    // cor
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.8.1")
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.8.0")
+    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
 
     // ----- KTOR -----
     implementation("io.ktor:ktor-client-auth-jvm:$ktorVersion")
